@@ -1,4 +1,4 @@
-# Per capita lifetime appropriations to NEH: 1966-2024
+# Lifetime per capita appropriations to NEH: 1966-2024
 
 This script uses public data to make a figure showing the cumulative per capita
 contribution to National Endowment for the Humanities.
