@@ -12,7 +12,7 @@ Rscript appropriations.R
 
 ## Figure
 
-
+![](https://raw.githubusercontent.com/btskinner/nehpercap/main/figures/neh_appropriations_pc_cumulative.png)
 
 ## NOTES
 
