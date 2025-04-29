@@ -207,18 +207,19 @@ g <- df |>
   labs(x = "Age",
        y = NULL,
        title = "What's my share of NEH appropriations?",
-       caption = expression(
+       caption = c(expression(
          italic(paste("Data sources: ",
                       "https://www.neh.gov/neh-appropriations-history; ",
                       "https://help.netflix.com/en/node/24926; ",
-                      "FRED (March 2025)"))
-       )) +
+                      "FRED (March 2025)"))),
+                      "https://github.com/btskinner/nehpercap")
+       ) +
   ## theme
   theme_bw(base_family = "Avenir", base_size = 18) +
   theme(legend.position = "none",
         panel.grid.major.x = element_blank(),
         panel.grid.minor.x = element_blank(),
-        plot.caption = element_text(size = 9))
+        plot.caption = element_text(hjust = c(1,0), size = 9))
 
 ## save
 ggsave(filename = file.path(fig_dir, "neh_appropriations_pc_cumulative.png"),
